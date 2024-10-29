@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
----
-
 # 🤖 Welcome!
 
 &#x20;Welcome! As i just started my exploration into the world of  cybersecurity. This Gitbook page is where I will be documenting my journey into web application security. Please feel free to look around.
