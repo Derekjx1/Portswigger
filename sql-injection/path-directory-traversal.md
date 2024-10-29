@@ -1,18 +1,3 @@
----
-description: Learning points about directory traversal
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Path/Directory Traversal
 
 ## What is Traversal?
