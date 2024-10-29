@@ -1,9 +1,3 @@
----
-description: >-
-  Also known as Shell injecction that allows malicious actors to execute OS
-  level commands to compromise systems and data.
----
-
 # OS Injection
 
 ## Code injection vs OS command injection
