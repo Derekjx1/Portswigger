@@ -4,14 +4,13 @@ What is SQLi?
 
 SQL Injection (SQLi) is a code injection technique that hackers use to attack data-driven applications by inserting malicious SQL statements into an entry field for execution, potentially allowing them to retrieve, modify, or delete database data and gain unauthorized access
 
-{% hint style="info" %}
 ## Testing for SQLi
 
 * Single quote character ' - SQL syntax terminates string in the parameter value and would likely cause an error
 * Boolean expressions such as 1=1 or 1=2 to inject true or false statements to see how application reacts
 * Time delays (sleep function etc. ) to look for time differences for app to respond
 * OAST payloads  that can trigger out of  band interactions with app
-{% endhint %}
+
 
 ## Retrieve hidden data in a web app
 
