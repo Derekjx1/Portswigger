@@ -1,8 +1,3 @@
----
-description: >-
-  Unprotected privillege user functionalities can be exploited due to access
-  control not properly configured
----
 
 # Access Control
 
