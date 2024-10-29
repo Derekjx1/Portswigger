@@ -1,8 +1,4 @@
----
-description: >-
-  Allowing users to upload files without proper input validation can lead to
-  serious security risks.
----
+
 
 # File Upload
 
@@ -10,9 +6,9 @@ File Upload Vulnerabilities&#x20;
 
 Without proper input validation checks, malicious actors can arbitary upload any types and could potentially achieve remote code execution through server-side scripts. When developers fail to restrict file types and even fail to check content of the uploaded file cause this vulnerability to be exploited.
 
-{% hint style="info" %}
+
 In real-world scenarios, simple file upload exploits may fail due to defenses thhat are present to deter uploading of arbitary files. However, insufficient input validation of the file content such as only checking the value of the content-type header value if the server is only expecting certain types of files can still lead to vulnerabilities.
-{% endhint %}
+
 
 ## Impacts of file upload vulnerability
 
