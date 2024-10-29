@@ -1,17 +1,4 @@
----
-description: Learning points about HTTP request smuggling
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
+
 
 # HTTP Request Smuggling
 
