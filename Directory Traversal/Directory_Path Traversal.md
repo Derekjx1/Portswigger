@@ -4,9 +4,9 @@
 
 Directory or path traversal is a server-side vulnerability that allows an attacker to access folders and files outside the intended directory. This can lead to the exposure of sensitive information.Traversal makes use of the ( ../ or \\..) sequences to traverse server files in its file directory
 
-{% hint style="info" %}
+
 Backslash & Forward slash may vary depending on Windows or Unix based OS
-{% endhint %}
+
 
 Example payload below shows that we are trying to use the traversal sequence to get the /etc/passwd file in the server.
 
