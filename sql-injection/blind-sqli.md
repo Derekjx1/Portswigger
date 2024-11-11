@@ -10,6 +10,8 @@ Using conditional payloads such as 1=1 or 1=2, we can observe how application is
 
 ## Error-Based 
 
-Situations where application response with database errors. Through interpreting error messages, we may be able to extract meaningful information from application. Sometimes, when there is no visible responses or behaviour, conditional statements can be used to induce error messages as well.
+Injecting true or false statements using payloads such as 1=1 and 1=0 is in some cases might not work because application behaviour doesn't change when evaulating these boolean payloads. However, we can purposely induce error messages with payloads when a certain condition is true.(e.g. syntax error etc).
+
 
 <ins> Error-based SQLi using conditional statements</ins>
+
