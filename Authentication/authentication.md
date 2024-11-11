@@ -1,9 +1,3 @@
----
-description: >-
-  Authentication vulnerabilities can lead to unauthorized users getting access
-  into systems
----
-
 # Authentication
 
 ## AuthN v AuthZ
