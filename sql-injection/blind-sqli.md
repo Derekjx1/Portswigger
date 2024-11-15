@@ -33,3 +33,14 @@ From here, we can iterate our queries to do something such as passsword enumerat
 ```sql
 SELECT CASE WHEN (substring(password,1,1)='a') THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator'='a'--
 ```
+
+
+<ins>Visible error-based SQL injection</ins>
+
+We may be able to extract information based on verbose database error messages due to misconfigurations on the database. By doing this, a blind sqli may become a visible one.
+
+```
+Unterminated string literal started at position 52 in SQL SELECT * FROM tracking WHERE id = '''. Expected char
+```
+
+![image](https://github.com/user-attachments/assets/12e1048e-16ce-4903-a4a2-d3f11c770d56)
