@@ -44,3 +44,8 @@ Unterminated string literal started at position 52 in SQL SELECT * FROM tracking
 ```
 
 ![image](https://github.com/user-attachments/assets/12e1048e-16ce-4903-a4a2-d3f11c770d56)
+
+
+
+<ins>Blind based SQLi using time delay based on conditional statements</ins>
+Blind SQLi can be triggered using time delay techniques based on a conditional statement that we can ask the application. For example a true condition will trigger a time delay and a false condition will not.
