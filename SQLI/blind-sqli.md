@@ -49,3 +49,10 @@ Unterminated string literal started at position 52 in SQL SELECT * FROM tracking
 
 <ins>Blind based SQLi using time delay based on conditional statements</ins>
 Blind SQLi can be triggered using time delay techniques based on a conditional statement that we can ask the application. For example a true condition will trigger a time delay and a false condition will not.
+
+For example , using a script we can iterate the password from the users table, evaluating character by character if matches we will trigger a time delay
+
+```sql
+' AND (SELECT CASE WHEN (SUBSTR(password,%s,1)=CHR(%s)) THEN pg_sleep(5) END IS NOT NULL FROM users where username = 'administrator')--
+```
+
