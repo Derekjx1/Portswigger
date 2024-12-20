@@ -7,3 +7,9 @@ Usually SQL injection seem to be in the URI query parameters but as long as ther
 
 
 Using tools like hackvector we can easily manipulate payloads such as xml encoding to bypass certain defenses such as WAF
+
+
+# Second Order SQLi
+
+Second order SQL injection is when attacker sends a http request with a malicious payload that is stored and later using it to exploit the vulnerability such as in a database.
+This is also known as stored SQL injection where victims unintentionally activates the payload when the http request retrieves data from the database. 
