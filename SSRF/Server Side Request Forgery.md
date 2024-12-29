@@ -15,6 +15,16 @@ Causing the server making a http request hosting the application through its loo
 * Administrative interface that is listening to another port from main app which might be accessible directly by user
 * Other internal systems in the backend that users do not have direct acccess may be potential targets as well
 
-<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption><p>Normal request that sends api request to backend to query inventory system</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Normal request that sends api request to backend to query inventory system</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption><p>Malicious request that tells server to get the admin interface on localhost</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Malicious request that tells server to get the admin interface on localhost</p></figcaption></figure>
+
+
+# Bypassing poor SSRF defenses that filters blacklisted keywords
+
+Some poorly configured SSRF defenses that blocks certain keywords such as localhost, can potentially be bypass. Using url encoding or obfuscating the payload. 
+![image](https://github.com/user-attachments/assets/c6ca93f4-bf16-4577-8d91-9294f73f3c52)
+
+
+
+#
