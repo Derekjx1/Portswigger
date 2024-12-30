@@ -27,4 +27,19 @@ Some poorly configured SSRF defenses that blocks certain keywords such as localh
 
 
 
-#
+# SSRF filter bypass using open redirect vulnerability
+
+SSRF vulnerabilities can still be exploited even though there are filters such as a blacklist or a whitelist of keywords such as domain names. Suppose that a stock check feature of an application is calling out to backend api has defenses that 
+checks the supplied URL but supports redirection functionality. If a application has a open redirect vulnerability, the URL here may potentially be used as the payload to exploit SSRF.
+
+Input validation on supplied URL
+![image](https://github.com/user-attachments/assets/e085aa2d-be16-4a2a-9a2c-5ab7988be35a) 
+
+Open redirect vulnerability on next product functionality
+<img width="921" alt="image" src="https://github.com/user-attachments/assets/6401ddf0-ab70-4a9d-a81a-1ed020e4dd09" />
+
+Using open redirect to exploit SSRF
+![image](https://github.com/user-attachments/assets/f24382d2-5102-4285-9d02-79d05a8d813c)
+
+
+> This works because the supplied URL is being allowed
