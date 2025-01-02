@@ -10,7 +10,12 @@ Brute-forcing is a common method to obtain valid user credentials. If an applica
 
 ### Username Enumeration
 
-Username enumeration occurs when an application reveals valid usernames through its responses to authentication attempts. This enables attackers to discover valid usernames for use in brute-force attacks. To prevent this, standardize error messages and responses to avoid disclosing the validity of usernames.
+Username enumeration occurs when an application reveals valid usernames through its responses to authentication attempts. Check for reponses what a valid username with a wrong password returns as compared to an invalid username & password. Look out for such subtle indications
+To prevent this, standardize error messages and responses to avoid disclosing the validity of usernames.
+
+Responses can be studied to give clues to which usernames are valid during enumeration. It can be seeing different status codes, different response contents, different response timing etc.
+
+
 
 ### 2FA Bypass
 
